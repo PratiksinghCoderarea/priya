@@ -1,40 +1,34 @@
 .screen-full {
   width: 100%;
   height: 100vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 .screen-full .container {
-  width: 100%;
   max-width: 580px;
-  padding: 0 16px;
-  box-sizing: border-box;
 }
 
-@media (max-width: 680px) {
+@media(max-width: 680px) {
   .screen-full .container {
-    padding: 0 24px;
+    max-width: 100vw;
+    padding: 0px 40px;
   }
 }
 
-@media (max-width: 520px) {
-  .screen-full {
-    padding: 16px;
-  }
+@media(max-width: 520px) {
   .screen-full .container {
-    padding: 0;
+    max-width: 100vw;
+    padding: 0px 20px;
   }
 }
 
 .screen-full header img {
-  max-height: 200px;
-  max-width: 100%;
-  height: auto;
+  max-height: 250px;
+  max-width: 75%;
 }
 
 .screen-full header {
@@ -42,22 +36,23 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.screen-full div {
+  margin-bottom: 32px;
+}
+
+.screen-full h1 {
+  font-size: 28px;
   margin-bottom: 16px;
   text-align: center;
 }
 
-.screen-full div {
-  margin-bottom: 24px;
-}
-
-.screen-full h1 {
-  font-size: 1.75rem;
-  margin-bottom: 12px;
-}
-
 .screen-full p {
-  font-size: 1rem;
-  line-height: 1.75rem;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: center;
 }
 
 .screen-full footer {
@@ -69,20 +64,19 @@
 
 .screen-full a {
   background-color: #FFF;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 16px 24px;
+  border-radius: 10px;
   border: none;
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
-  font-size: 1rem;
+  box-shadow: 2px 4px 8px rgba(0,0,0,.25);
+  font-size: 16px;
   font-weight: bold;
   text-decoration: none;
   color: black;
-  transition: 0.2s;
-  text-align: center;
+  transition: .2s;
 }
 
 .screen-full a:hover {
   cursor: pointer;
   filter: brightness(1.2);
-  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 8px 12px rgba(0,0,0,.25);
 }
