@@ -59,7 +59,7 @@ const App = () => {
       imageUrl={ursinho_S2_pandinha}
       bgColor={colors.red}
       textColor={colors.white}
-      title="bubu ♥ bubu"
+      title="bubu ♥ dudu"
       text="As I said before, these two are now a couple. They are not perfect... but they always support each other and overcome problems together."
       btnText="Continue"
       sequency="4"
